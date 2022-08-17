@@ -5,6 +5,7 @@
 @import "screen-header.css";
 @import "friends.css";
 @import "user-component.css";
+@import "badge.css";
 
 @font-face {
   font-family: "kakao";
@@ -71,4 +72,8 @@ body {
   text-decoration: none;
   color: inherit;
   font-size: 13px;
+}
+
+.main-screen {
+  padding: 0px var(--horizontal-space);
 }
