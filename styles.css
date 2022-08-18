@@ -60,7 +60,7 @@ body {
   border-color: var(--yellow);
 }
 
-#login-form input[type="submit"] {
+#login-form input[type="button"] {
   background-color: var(--yellow);
   cursor: pointer;
   padding: 20px 0px;
