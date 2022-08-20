@@ -103,3 +103,7 @@
 .open-post__heart-count span {
   margin-left: 3px;
 }
+
+#body-find {
+  height: 120vh;
+}
