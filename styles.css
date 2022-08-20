@@ -9,7 +9,8 @@
 @import "find.css";
 @import "more.css";
 @import "icon-row.css";
-
+@import "alt-screen-header.css";
+@import "settings.css";
 @font-face {
   font-family: "kakao";
   src: url("KakaoRegular.woff");
