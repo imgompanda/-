@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chats w.hyungwoo</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body id="chats-screen">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <i class="fa-solid fa-wifi"></i>
+        <!--To Do: wifi icon -->
+      </div>
+      <div class="status-bar__column"><span>18:43</span></div>
+
+      <div class="status-bar__column">
+        <span>110%</span>
+        <i class="fa-solid fa-battery-three-quarters fa-lg"></i>
+        <!-- batterty icon -->
+        <i class="fa-solid fa-bolt"></i>
+        <!-- lightning icon -->
+      </div>
+    </div>
+
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="chat.html">
+          <i class="fa-solid fa-angle-left fa-3x"></i>
+        </a>
+      </div>
+      <div class="alt-header__column">
+        <span class="alt-header__title">HyungWoo</span>
+      </div>
+      <div class="alt-header__column">
+        <i class="fa-solid fa-magnifying-glass fa-2x"></i
+        ><span><i class="fa-solid fa-bars fa-2x"></i></span>
+      </div>
+    </header>
+
+    <main class="main-screen main-chats">
+      <div class="chats__timestamp">Tuesday, June 30, 2022</div>
+
+      <div class="message-row">
+        <img src="https://avatars.githubusercontent.com/u/109493021?v=4" />
+        <div class="message-row__content">
+          <span class="message__author">HyungWoo</span>
+          <div class="message__info">
+            <span class="message__bubble">Hi!</span>
+            <span class="message__time">21:27</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="message-row message-row__own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">What's up bro</span>
+            <span class="message__time">21:27</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://kit.fontawesome.com/fb2029e64e.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -11,6 +11,8 @@
 @import "icon-row.css";
 @import "alt-screen-header.css";
 @import "settings.css";
+@import "chats.css";
+
 @font-face {
   font-family: "kakao";
   src: url("KakaoRegular.woff");
