@@ -12,6 +12,8 @@
 @import "alt-screen-header.css";
 @import "settings.css";
 @import "chats.css";
+@import "keyframes.css";
+@import "no-mobile.css";
 
 @font-face {
   font-family: "kakao";

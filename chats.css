@@ -12,6 +12,17 @@
   background-color: #abc1d1;
 }
 
+@keyframes fadeindown {
+  from {
+    transform: translatey(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
 .main-chats {
   margin-top: 140px;
   display: flex;
@@ -26,6 +37,7 @@
   border-radius: 25px;
   font-size: 15px;
   margin-bottom: 25px;
+  animation: fadeindown 0.8s linear;
 }
 
 #chats-screen .status-bar {
@@ -38,10 +50,40 @@
   z-index: 1;
 }
 
+@keyframes fadeinleft_right {
+  from {
+    transform: translatex(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeinright_left {
+  from {
+    transform: translatex(30px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
 .message-row {
   width: 100%;
   display: flex;
   margin-bottom: 25px;
+  animation: fadeinleft_right 0.8s linear;
+}
+
+.message-row__own {
+  justify-content: flex-end;
+  animation: fadeinright_left 0.8s linear forwards;
+  animation-delay: 1s;
+  opacity: 0;
 }
 
 .message-row img {
@@ -76,10 +118,6 @@
   font-size: 15px;
 }
 
-.message-row__own {
-  justify-content: flex-end;
-}
-
 .message-row__own .message__bubble {
   background-color: var(--yellow);
   border-top-right-radius: 0px;
@@ -111,6 +149,7 @@
   justify-content: space-between;
   padding: 5px 25px;
   align-items: center;
+  transition: all 0.3s ease-in-out;
 }
 
 .reply .reply__column:first-child {
@@ -127,6 +166,7 @@
   width: 99%;
   border: var(--main-border);
   border-radius: 20px;
+  transition: all 0.3s ease-in-out;
 }
 
 .reply i {
@@ -160,4 +200,25 @@
 .reply__column button:focus,
 .reply__column button:active {
   outline: none;
+}
+
+.reply .reply__column:first-child,
+.reply .fa-face-grin,
+.reply button {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within .fa-face-grin,
+.reply:focus-within button {
+  opacity: 0;
+}
+
+.reply input:focus {
+  width: 95vw;
+  transform: translateX(-10%) translateY(-80px);
+}
+
+.reply:focus-within {
+  transform: translateY(80px);
 }

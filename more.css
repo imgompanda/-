@@ -24,6 +24,14 @@
   padding-top: 40px;
 }
 
+.more-suggestion__icon-img:hover {
+  animation: shake-little 2.5s ease-in-out infinite;
+}
+
+.icon-row i:hover {
+  animation: shake-little 2.5s ease-in-out infinite;
+}
+
 .more-suggestion__title {
   margin-bottom: 30px;
 }

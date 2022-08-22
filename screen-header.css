@@ -31,3 +31,16 @@
   right: -5px;
   bottom: 23px;
 }
+
+@keyframes rotategear {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotatez(360deg);
+  }
+}
+
+.screen-header__icons .fa-gear {
+  animation: rotategear 3s ease-in-out infinite;
+}
